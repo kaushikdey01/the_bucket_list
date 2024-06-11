@@ -9,7 +9,7 @@ function App() {
         <Typography variant="h2"align="center">
           the bucket list 
         </Typography>
-        <img src={bucket} alt="bucket_list_icon" height="60" /> 
+        <img src={bucket} alt="bucket_list_icon" height="60" width="60" /> 
       </AppBar>
     </Container>
   );
