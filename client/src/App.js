@@ -3,16 +3,19 @@ import { Container, AppBar, Typography, Grow, Grid} from '@mui/material'
 import bucket from "./assets/images/bucket.jpg"
 import Posts from "./components/Posts/Posts";
 import Forms from "./components/Forms/Forms";
-
+import useStyles from './styles'
 
 const App = () => {
+
+  const classes = useStyles();
+  // usestyles is a react hook 
   return (
     <Container maxWidth = "lg">
-      <AppBar position="static" color="inherit">
-        <Typography variant="h2"align="center">
+      <AppBar className={classes.appBar} position="static" color="inherit">
+        <Typography  className={classes.heading} variant="h2"align="center">
           the bucket list 
         </Typography>
-        <img src={bucket} alt="bucket_list_icon" height="60" width="60" />
+        <img className={classes.image} src={bucket} alt="bucket_list_icon" height="60" width="60" />
       </AppBar>
       <Grow in>
         <Container>
